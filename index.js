@@ -18,7 +18,7 @@ const client = new Client({
   port: dbPort,
 });
 
-client.connect();
+client.connect().catch(err=>console.log(err));
 
 const mainMenu = async () => {
   const answers = await inquirer.prompt({
