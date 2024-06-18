@@ -20,7 +20,7 @@ To install and run the NodeHR-Manager application locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <https://github.com/Igimbayeva/NodeHR-Manager>
+   git clone git@github.com:Igimbayeva/NodeHR-Manager.git
    cd NodeHR-Manager
    ```
 
