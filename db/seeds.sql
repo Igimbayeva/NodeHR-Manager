@@ -1,34 +1,28 @@
-INSERT INTO department (name)
-VALUES  ("Engineering"),
-        ("Finance"),
-        ("Interdepartmental"),
-        ("Sales"),
-        ("Legal");
+-- Connect to the database
+\c employees
 
-INSERT INTO role (title, salary, department_id)
-VALUES  ("Engineering Manager", 120000, 1),
-        ("Engineering Lead", 100000, 1),
-        ("Staff Engineer", 85000, 1),
-        ("Finance Manager", 85000, 2),
-        ("Accountant", 75000, 2),
-        ("Brand Advocate Manager", 95000, 3),
-        ("Brand Advocate Sr. Analyst", 85000, 3),
-        ("Brand Advocate Analyst", 70000, 3),
-        ("Sales Manager", 75000, 4),
-        ("Salesperson", 65000, 4),
-        ("Legal Manager", 110000, 5),
-        ("Lawyer", 95000, 5);
+INSERT INTO department (name) VALUES
+  ('Sales'),
+  ('Engineering'),
+  ('Finance'),
+  ('Legal');
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES  ('Alex', 'Johnson',  1, NULL),
-        ('Emily', 'Davis',  2, 1),
-        ('Michael', 'Brown',  3, 1), 
-        ('Sarah', 'Miller',  4, NULL), 
-        ('David', 'Wilson',  5, 4),
-        ('Sophia', 'Moore',  6, NULL), 
-        ('James', 'Taylor',  7, 6), 
-        ('Olivia', 'Anderson',  8, 6), 
-        ('Daniel', 'Thomas',  9, NULL), 
-        ('Emma', 'Jackson',  10, 9), 
-        ('Christopher', 'White',  11, NULL), 
-        ('Grace', 'Harris',  12, 11);
+INSERT INTO role (title, salary, department_id) VALUES
+  ('Sales Lead', 105000, 1),
+  ('Salesperson', 85000, 1),
+  ('Lead Engineer', 155000, 2),
+  ('Software Engineer', 125000, 2),
+  ('Account Manager', 165000, 3),
+  ('Accountant', 130000, 3),
+  ('Legal Team Lead', 255000, 4),
+  ('Lawyer', 195000, 4);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
+  ('Emma', 'Smith', 1, NULL),
+  ('Olivia', 'Johnson', 2, 1),
+  ('Ava', 'Williams', 3, NULL),
+  ('Sophia', 'Brown', 4, 3),
+  ('Isabella', 'Jones', 5, NULL),
+  ('Mia', 'Garcia', 6, 5),
+  ('Charlotte', 'Miller', 7, NULL),
+  ('Amelia', 'Davis', 8, 7);
