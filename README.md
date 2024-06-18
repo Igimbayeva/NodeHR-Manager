@@ -84,11 +84,7 @@ The relationships between these tables are established using foreign key constra
 
 ## Walkthrough Video
 
-<iframe src="https://drive.google.com/file/d/1sCLNN5CTOqBW9rh7qk706vJ_oEBhi9Ba/preview" width="640" height="480"></iframe>
-
-
-
-The video covers basic functionalities, including adding employees, updating roles, and viewing department budgets.
+The [video walkthough](https://drive.google.com/file/d/1sCLNN5CTOqBW9rh7qk706vJ_oEBhi9Ba/view)covers basic functionalities, including adding employees, updating roles, and viewing department budgets.
 
 ## Contributing
 
